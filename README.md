@@ -8,14 +8,21 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 ======
 
 **<details><summary>UX</summary>**
+* [_Project Goals_](#project_goals)
 * [_Target Users_](#target-users)
 * [_User Stories_](#user-stories)
 </details>
 
 **<details><summary>Features</summary>**
+* [_Exsisting Features_](#existing_features)
+* [_Future Features_](#future_features)
 </details>
 
 **<details><summary>Technologies</summary>**
+* [_Languages_](#languages)
+* [_Libraries & Frameworks_](#libraries_&_frameworks)
+* [_Wireframes_](#wireframes)
+* [_Tools_](#tools)
 </details>
 
 **<details><summary>Testing</summary>**
@@ -33,28 +40,52 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 
 :bust_in_silhouette: UX
 ======
+
+### **Project Goals**
+* Make a Full Stack eCommerse Website
+* With user authentication
+* Using Stripe payments
+
 ### **Target users**
 * Craft Beer fanatics
 * People knew to craft beer
 * People who want beer delivered to the door
 
 ### **User Stories**
-![user-stories](README_FILES/2021-10-11.png)
+![user-stories](README_FILES/user_stories.png)
+
+### **Schema**
+![schema](README_FILES/schema.png)
 
 :electron: Features
 ======
 
 ### **Exsisting Features**
-* 
+* Media responsive on all devices
+* Navigation Buttons that link to all pages (Depending on user permissions)
+* User registration, login and log out
+* User verification
+* User age verification
+* Password protected accounts
+* User profile page where order history can be viewed
+* Admin can add, update and delete products
+* Admin Blog page, where admin can inform users of upcoming brews
+* Checkout Bag
+* Secure checkout using Stripe.
+* Order verification
 
 ### **Future Features**
 To be added in the future:
+* Login from social Media accounts
 
 :computer: Technologies
 ======
 
 ### **Languages**
-
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### **Libraries & Frameworks**
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
