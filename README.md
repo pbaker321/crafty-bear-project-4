@@ -57,6 +57,15 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 ### **Schema**
 ![schema](README_FILES/schema.png)
 
+### **Fonts**
+Using Noto Sans Display as my main font
+
+### **Color**
+From [coolor.co](https://coolors.co) Color Palattes
+
+![colors](README_FILES/colors.png)
+
+
 :electron: Features
 ======
 
