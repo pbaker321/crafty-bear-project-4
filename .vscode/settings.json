@@ -21,7 +21,11 @@
       "**/CVS": true
    },
    "files.autoSave": "off",
+<<<<<<< HEAD
    "workbench.colorTheme": "Tomorrow Night Bright",
+=======
+   "workbench.colorTheme": "Deepdark Material Theme | Default Version",
+>>>>>>> 3097a2ae5b4ea0d1ff7502a26df18e18d68515ec
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify"
 }
