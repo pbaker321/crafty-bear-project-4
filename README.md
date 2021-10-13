@@ -1,8 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+<br/>
+
 # **Crafty Bear Project**
 
-Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse website for a Dublin based micro brewery. The beer is actually real and i have been given premission from the owner to make a mock site. 
+Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse website for a Dublin based micro brewery. The beer is actually real and i have been given premission from the owner to make a fictional site based on their product. 
+
+<br/>
 
 :file_folder: Table of Contents
 ======
@@ -11,6 +15,8 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 * [_Project Goals_](#project_goals)
 * [_Target Users_](#target-users)
 * [_User Stories_](#user-stories)
+* [_Schema_](#schema)
+* [_Wireframes_](#wireframes)
 </details>
 
 **<details><summary>Features</summary>**
@@ -21,7 +27,6 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 **<details><summary>Technologies</summary>**
 * [_Languages_](#languages)
 * [_Libraries & Frameworks_](#libraries_&_frameworks)
-* [_Wireframes_](#wireframes)
 * [_Tools_](#tools)
 </details>
 
@@ -36,7 +41,8 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 
 **<details><summary>Credits</summary>**
 </details>
-<br>
+
+<br/>
 
 :bust_in_silhouette: UX
 ======
@@ -57,6 +63,11 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 ### **Schema**
 ![schema](README_FILES/schema.png)
 
+### **Wireframes**
+ Wireframes were made on ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) and can ge found [here](https://www.figma.com/file/AQybFaNNP2dp1kEnxCPNE4/Crafty-Bear?node-id=0%3A1).
+
+ Here You will see The layout and schema. Plus some additional mockups.
+
 ### **Fonts**
 Using Noto Sans Display as my main font
 
@@ -65,6 +76,7 @@ From [coolor.co](https://coolors.co) Color Palattes
 
 ![colors](README_FILES/colors.png)
 
+<br/>
 
 :electron: Features
 ======
@@ -87,6 +99,8 @@ From [coolor.co](https://coolors.co) Color Palattes
 To be added in the future:
 * Login from social Media accounts
 
+<br/>
+
 :computer: Technologies
 ======
 
@@ -106,13 +120,16 @@ To be added in the future:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ### **Wireframes**
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) 
+
 ### **Tools**
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Adobe Lightroom](https://img.shields.io/static/v1?style=for-the-badge&message=Adobe+Lightroom&color=31A8FF&logo=Adobe+Lightroom&logoColor=FFFFFF&label=)
 ![Stripe](https://img.shields.io/static/v1?style=for-the-badge&message=Stripe&color=008CDD&logo=Stripe&logoColor=FFFFFF&label=)
+
+<br/>
 
 :stethoscope: Testing
 ======
@@ -131,8 +148,12 @@ To be added in the future:
 ### ***Website Compatability***
 ### ***Device Responsiveness***
 
+<br/>
+
 :biohazard: Bugs
 ======
+
+<br/>
 
 :copyright: Credits
 ======
