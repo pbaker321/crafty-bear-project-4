@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/glasses-light-dark-wheat-beer-dark-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh -164px);
+    color: #1D3557;
+    font-family: 'Noto Sans Display';
+}
+
+.text-nav {
+    color: #FDF0D5;
+}
+
+.page-footer {
+    min-width: 100%;
+}
