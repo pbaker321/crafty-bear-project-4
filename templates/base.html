@@ -4,41 +4,43 @@
 <html lang="en">
     <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% endblock %}
+        {% block meta %}
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %}
+        {% block extra_meta %}
+        {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+        {% block corecss %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&display=swap">
+            <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+        {% block extra_css %}
+        {% endblock %}
 
-    {% block corecss %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+        {% block corejs %}
+            <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        {% endblock %}
 
-    {% block corejs %}
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    {% endblock %}
+        {% block extra_js %}
+        {% endblock %}
 
-    <title>Crafty Bear {% block extra_title %}{% endblock %}</title>
+        <title>Crafty Bear {% block extra_title %}{% endblock %}</title>
+
     </head>
     <body>
         <header class="container-fluid fixed-top">
-            <div id="top-nav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
+            <div id="top-nav" class="row pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font my-0 text-light ">Crafty Bear</h2>
+                        <h2 class="logo-font my-0 text-cream">Crafty Bear</h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -46,7 +48,7 @@
                         <div class="input-group w-100">
                             <input class="form-control border border-black rounded-1" type="text" name="q" placeholder="Search our site">
                             <div class="input-group-append">
-                                <button class="form-control btn btn-white border text-light  border-black rounded-1" type="submit">
+                                <button class="form-control btn btn-white border text-cream  border-black rounded-1" type="submit">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -59,7 +61,7 @@
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
                             <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center text-light ">
+                                <div class="text-center text-cream">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
                                 </div>
@@ -78,8 +80,8 @@
                             </div>
                         </li>
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light {% endif %} nav-link" href="">
-                                <div class="text-center text-light ">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-cream {% endif %} nav-link" href="">
+                                <div class="text-center text-cream ">
                                     <div><i class="fas fa-shopping-cart"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
@@ -97,7 +99,7 @@
         </header>
     
         {% if messages %}
-        <div class="message-container"></div>
+            <div class="message-container"></div>
         {% endif %}
 
         {% block page_header %}
@@ -106,34 +108,35 @@
         {% block content %}
         {% endblock %}
 
-        {% block postloadjs %}
-        {% endblock %}
-
         <footer class="fixed-bottom page-footer">
-            <div class="container-fluid text-light bg-dark">
-                <div class="row main-footer">
-                    <div class="col-6 text-light text-center">
-                        <h5>Footer content</h5>
+            <div class="container-fluid text-cream nav-bg">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="text-center mt-1">Footer content</h5>
                         <ul>
-                            <li><a class="text-light" href="#!">Home</a></li>
-                            <li><a class="text-light" href="#!"></i>About</a></li>
-                            <li><a class="text-light" href="#!"></i>Account</a></li>
-                            <li><a class="text-light" href="#!"></i>Shopping</a></li>
-                            <li><a class="text-light" href="#!"></i>Contact Us</a></li>
+                            <li><a class="text-cream mb-2" href="#!"><i class="fas fa-home m-2"></i>Home</a></li>
+                            <li><a class="text-cream mb-2" href="#!"><i class="fas fa-info m-2"></i>About</a></li>
+                            <li><a class="text-cream mb-2" href="#!"><i class="fas fa-user m-2"></i>Account</a></li>
+                            <li><a class="text-cream mb-2" href="#!"><i class="fas fa-store m-2"></i>Shopping</a></li>
+                            <li><a class="text-cream mb-2" href="#!"><i class="fas fa-envelope m-2"></i>Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 text-center">
-                        <h5>Follow Us On.....</h5>
+                    <div class="col-6 ">
+                        <h5 class="text-center mt-1">Follow Us On.....</h5>
                         <ul>
-                            <li><a class="text-light " href="#!"><i class="fab fa-facebook"></i>Facebook</a></li>
-                            <li><a class="text-light " href="#!"><i class="fab fa-instagram-square"></i>Instagram</a></li>
-                            <li><a class="text-light " href="#!"><i class="fab fa-linkedin"></i>Linkedin</a></li>
-                            <li><a class="text-light " href="#!"><i class="fab fa-linkedin"></i>Twitter</a></li>
+                            <li><a class="text-cream mb-2" href="https://www.facebook.com/"><i class="fab fa-facebook m-2"></i>Facebook</a></li>
+                            <li><a class="text-cream mb-2" href="https://www.instagram.com/"><i class="fab fa-instagram-square m-2"></i>Instagram</a></li>
+                            <li><a class="text-cream mb-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin m-2"></i>Linkedin</a></li>
+                            <li><a class="text-cream mb-2" href="https://www.twitter.com/"><i class="fab fa-twitter-square m-2"></i></i>Twitter</a></li>
+                            <li><a class="text-cream mb-2" href="https://www.pinterest.com/"><i class="fab fa-pinterest-square m-2"></i></i>Twitter</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
+
+        {% block postloadjs %}
+        {% endblock %}
 
     </body>
 </html>

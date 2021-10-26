@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/glasses-light-dark-wheat-beer-dark-background.jpg') no-repeat center center fixed;
+    background: url('/media/beer-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh -164px);
-    color: #1D3557;
+    height: calc(100vh - 300px);
+    color: #FDF0D5;
     font-family: 'Noto Sans Display';
 }
 
@@ -21,12 +21,12 @@ body {
 .shop-now-button {
     background: #FDF0D5;
     color: #1D3557;
-    min-width: 260px;
+    min-width: 160px;
 }
 
 .btn-white {
-    background: #FDF0D5;
-    color: #1D3557;
+    background: #000;
+    color: #FDF0D5;
 }
 
 .shop-now-button:hover,
@@ -39,7 +39,7 @@ body {
     color: #1D3557;
 }
 
-.header-text {
+.text-cream {
     color: #FDF0D5 !important;
 }
 
@@ -47,8 +47,17 @@ body {
     border: 1px solid black !important;
 }
 
+.nav-bg {
+    background-color: #000;
+}
+
 .page-footer {
+    margin-top: 0pt;
     min-width: 100%;
+}
+
+ul{
+    list-style:none;
 }
 
 /* -------------------------------- Media Queries */
