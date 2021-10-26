@@ -10,10 +10,67 @@ body {
     font-family: 'Noto Sans Display';
 }
 
-.text-nav {
-    color: #FDF0D5;
+.main-logo-link {
+    width: fit-content;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.shop-now-button {
+    background: #FDF0D5;
+    color: #1D3557;
+    min-width: 260px;
+}
+
+.btn-white {
+    background: #FDF0D5;
+    color: #1D3557;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #FDF0D5;
+    color: #1D3557;
+}
+
+.header-text {
+    color: #FDF0D5 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
 }
 
 .page-footer {
     min-width: 100%;
 }
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 164px;
+      }
+  }
