@@ -3,10 +3,6 @@ html {
 }
 
 body {
-    background: url('/media/beer-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 300px);
-    color: #FDF0D5;
     font-family: 'Noto Sans Display';
 }
 
@@ -25,7 +21,7 @@ body {
 }
 
 .btn-white {
-    background: #000;
+    background: #1D3557;
     color: #FDF0D5;
 }
 
@@ -43,12 +39,21 @@ body {
     color: #FDF0D5 !important;
 }
 
+.text-blue {
+    color: #1D3557;
+}
+
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #1D3557 !important;
 }
 
 .nav-bg {
-    background-color: #000;
+    background-color: #1D3557;
+}
+
+hr.blue-line {
+    border-top: 2px solid #1D3557;
+    width: 90%;
 }
 
 .page-footer {
@@ -58,6 +63,10 @@ body {
 
 ul{
     list-style:none;
+}
+
+.carousel-style img{
+    height: 500px;
 }
 
 /* -------------------------------- Media Queries */

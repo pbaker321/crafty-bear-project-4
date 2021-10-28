@@ -1,0 +1,64 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#">
+                About Us
+            </a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="drink-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Crafty Beers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="drink-link">
+                <a href="" class="dropdown-item">IPA's</a>
+                <a href="" class="dropdown-item">Stout's</a>
+                <a href="" class="dropdown-item">Bottle's</a>
+                <a href="" class="dropdown-item">Can's</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="merch-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Homeware
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="merch-link">
+                <a href="" class="dropdown-item">Hoodies</a>
+                <a href="" class="dropdown-item">T-Shirt's</a>
+                <a href="" class="dropdown-item">Accessories</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </div>
+        </li>
+
+    </ul>
+</div>
