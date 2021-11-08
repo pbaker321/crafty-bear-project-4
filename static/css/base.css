@@ -18,6 +18,7 @@ body {
     background: #FDF0D5;
     color: #1D3557;
     min-width: 160px;
+    border-radius: 20px;
 }
 
 .btn-white {
@@ -57,7 +58,7 @@ hr.blue-line {
 }
 
 .page-footer {
-    margin-top: 0pt;
+    margin-top: 10px;
     min-width: 100%;
 }
 
@@ -66,7 +67,7 @@ ul{
 }
 
 .carousel-style img{
-    height: 500px;
+    height: 550px;
 }
 
 /* -------------------------------- Media Queries */
