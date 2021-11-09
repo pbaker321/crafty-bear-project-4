@@ -6,6 +6,8 @@ body {
     font-family: 'Noto Sans Display';
 }
 
+/*-- Logo/Heading --*/
+
 .main-logo-link {
     width: fit-content;
 }
@@ -13,6 +15,8 @@ body {
 .logo-font {
     text-transform: uppercase;
 }
+
+/*-- Buttons --*/
 
 .shop-now-button {
     background: #FDF0D5;
@@ -36,26 +40,26 @@ body {
     color: #1D3557;
 }
 
+.border-black {
+    border: 1px solid #1D3557 !important;
+}
+
+hr .blue-line {
+    border-top: 2px solid #1D3557 !important;
+    width: 90%;
+}
+
+/*-- Text Colors --*/
+
 .text-cream {
     color: #FDF0D5 !important;
 }
 
 .text-blue {
-    color: #1D3557;
+    color: #1D3557 !important;
 }
 
-.border-black {
-    border: 1px solid #1D3557 !important;
-}
-
-.nav-bg {
-    background-color: #1D3557;
-}
-
-hr.blue-line {
-    border-top: 2px solid #1D3557;
-    width: 90%;
-}
+/*-- Footer --*/
 
 .page-footer {
     margin-top: 10px;
@@ -66,8 +70,26 @@ ul{
     list-style:none;
 }
 
+.nav-bg {
+    background-color: #1D3557;
+}
+
+/*-- Carousel --*/
+
 .carousel-style img{
     height: 550px;
+}
+
+/*-- Products overlay --*/
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
