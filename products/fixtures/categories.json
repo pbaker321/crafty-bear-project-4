@@ -1,0 +1,36 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "Cans",
+        "friendly_name": "Cans"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "Bottles",
+        "friendly_name": "Bottles"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "IPA",
+        "friendly_name": "IPA"
+    }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "Stout",
+        "friendly_name": "Stout"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+    "name": "Merchandise",
+    "friendly_name": "Merchandise"
+    }
+}]

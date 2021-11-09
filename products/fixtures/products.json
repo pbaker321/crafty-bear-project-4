@@ -1,0 +1,12 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "IPA1",
+        "name": "West Coast IPA 330ml can",
+        "description": "A straight-up IPA at 6% ABV. It's a darkish amber colour and slightly murky with it. The aroma is a lovely blend of orange fruit, Christmas spices and dry minerals, old school yet bright and fresh. It tastes heavy and funky, packed with greasy resins. The mineral side is strongly accentuated, adding to the hop bitterness, so a sip starts on summer fruit, sails past oily winter herbs.",
+        "price": 3.49,
+        "category": 3,
+        "image": "west-coast-ipa.jpg"
+    }
+}]
