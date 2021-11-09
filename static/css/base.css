@@ -33,9 +33,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
     background: #FDF0D5;
     color: #1D3557;
 }
