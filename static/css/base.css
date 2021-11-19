@@ -58,6 +58,11 @@ body {
     border: 1px solid #1D3557 !important;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 hr.blue-line {
     margin-top: 0;
     border-top: 2px solid #1D3557 !important;
