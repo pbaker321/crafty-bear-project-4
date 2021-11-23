@@ -40,7 +40,7 @@
             <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="">
-                        <div class="input-group w-50 text-lg-left">
+                        <div class="input-group w-75 text-lg-left">
                             <input class="form-control border border-black rounded-1" type="text" name="q" placeholder="Search our site">
                             <div class="input-group-append">
                                 <button class="form-control btn btn-white border text-cream  border-black rounded-1" type="submit">
@@ -54,13 +54,13 @@
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font my-0 text-blue">Crafty Bear</h2>
+                        <h2 class="logo-font my-0 text-blue ml-2">Crafty Bear</h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-blue {% endif %} nav-link" href="">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-blue {% endif %} nav-link" href="{% url 'view_bag' %}">
                                 <div class="text-center text-blue">
                                     <div><i class="fas fa-shopping-cart"></i></div>
                                     <p class="my-0">
