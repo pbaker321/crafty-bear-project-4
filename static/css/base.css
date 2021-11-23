@@ -36,7 +36,6 @@ body {
     border: 1px solid #FDF0D5;
 }
 
-
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
@@ -63,6 +62,8 @@ body {
     cursor: pointer;
 }
 
+/*-- Blue Line --*/
+
 hr.blue-line {
     margin-top: 0;
     border-top: 2px solid #1D3557 !important;
@@ -77,6 +78,23 @@ hr.blue-line {
 
 .text-blue {
     color: #1D3557 !important;
+}
+
+/*-- Toasts --*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 /*-- Footer --*/

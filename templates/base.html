@@ -39,7 +39,7 @@
         <header class="container-fluid fixed-top">
             <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <form method="GET" action="{% url 'products' %}">
+                    <form method="GET" action="">
                         <div class="input-group w-50 text-lg-left">
                             <input class="form-control border border-black rounded-1" type="text" name="q" placeholder="Search our site">
                             <div class="input-group-append">
@@ -53,21 +53,21 @@
                     </form>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
-                    <a href="{% url 'home' %}" class="nav-link">
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
                         <h2 class="logo-font my-0 text-blue">Crafty Bear</h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-blue {% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-blue {% endif %} nav-link" href="">
                                 <div class="text-center text-blue">
                                     <div><i class="fas fa-shopping-cart"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            €{{ grand_total|floatformat:2 }}
+                                            ${{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            €0.00
+                                            $0.00
                                         {% endif %}
                                     </p>
                                 </div>
@@ -89,7 +89,21 @@
         </header>
     
         {% if messages %}
-            <div class="message-container"></div>
+            <div class="message-container">
+                {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+            </div>
         {% endif %}
 
         {% block page_header %}
@@ -98,36 +112,13 @@
         {% block content %}
         {% endblock %}
 
-        {% block postloadjs %}
-        {% endblock %}
+        {% include 'includes/footer.html' %}
 
-        <footer class="page-footer">
-            <div class="container-fluid text-cream nav-bg">
-                <div class="row">
-                    <div class="col-4">
-                        <h5 class="text-center mt-1">Links</h5>
-                        <ul class="text-left">
-                            <li><a class="text-cream mb-3" href="{% url 'home' %}">Home</a></li>
-                            <li><a class="text-cream mb-3" href="#!">About</a></li>
-                            <li><a class="text-cream mb-3" href="#!">Account</a></li>
-                            <li><a class="text-cream mb-3" href="{% url 'products' %}">Shopping</a></li>
-                            <li><a class="text-cream mb-3" href="#!">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <h5 class="text-center mt-1">Follow Us On.....</h5>
-                        <ul>
-                            <li><a class="text-cream mb-2" href="https://www.facebook.com/"><i class="fab fa-facebook m-2"></i>Facebook</a></li>
-                            <li><a class="text-cream mb-2" href="https://www.instagram.com/"><i class="fab fa-instagram-square m-2"></i>Instagram</a></li>
-                            <li><a class="text-cream mb-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin m-2"></i>Linkedin</a></li>
-                            <li><a class="text-cream mb-2" href="https://www.twitter.com/"><i class="fab fa-twitter-square m-2"></i></i>Twitter</a></li>
-                            <li><a class="text-cream mb-2" href="https://www.pinterest.com/"><i class="fab fa-pinterest-square m-2"></i></i>Pinterest</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% block postloadjs %}
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
+        {% endblock %}
 
     </body>
 </html>
