@@ -153,6 +153,9 @@ To be added in the future:
 :biohazard: Bugs
 ======
 
+Stripe Webhooks. Are sending but timing out at the source end.
+Confirmation email. not loading in terminal
+
 <br/>
 
 :copyright: Credits
