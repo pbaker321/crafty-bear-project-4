@@ -161,10 +161,13 @@ hr.blue-line {
 
 /*-- Footer --*/
 
+footer {
+    bottom: 0;
+}
+
 .page-footer {
-    margin-top: 20px;
+    margin-top: 50px;
     min-width: 100%;
-    margin-bottom: 0;
 }
 
 ul{
@@ -175,10 +178,15 @@ ul{
     background-color: #1D3557;
 }
 
+.bg-cream {
+    background-color: #FDF0D5;
+    color: #1D3557;
+}
+
 /*-- Carousel --*/
 
 .carousel-style img{
-    height: 550px;
+    height: 600px;
 }
 
 /*-- Allauth form formatting --*/
