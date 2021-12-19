@@ -40,6 +40,14 @@
     <body>
         <header class="container-fluid fixed-top">
             <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+                <!-- Site Logo -->
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <a href="{% url 'home' %}" class="text-center nav-link main-logo-link">
+                        <h2 class="logo-font my-0 text-blue ml-2">Crafty Bear</h2>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="">
                         <div class="input-group w-75 text-lg-left">
@@ -54,11 +62,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <a href="{% url 'home' %}" class="text-center nav-link main-logo-link">
-                        <h2 class="logo-font my-0 text-blue ml-2">Crafty Bear</h2>
-                    </a>
-                </div>
+                
+                <!-- Shopping Cart -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item">
@@ -78,6 +83,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Navigation -->
             <div class="row bg-white">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
