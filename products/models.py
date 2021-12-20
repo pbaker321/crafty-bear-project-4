@@ -26,6 +26,19 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
-
     def __str__(self):
         return self.name
+
+
+class Comment(models.Model):
+    """
+    Comment model for products
+    """
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name='comments', default=None)
+    author = models.CharField(max_length=254)
+    body = models.TextField()
+    date_added = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return 'Comment by {}'.format(self.author)

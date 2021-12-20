@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Comment
+from .forms import ProductForm, CommentForm
 
 
 def all_products(request):
@@ -64,9 +64,26 @@ def product_detail(request, product_id):
     """ View to show product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = Comment.objects.filter(product=product)
+
+    if request.method == 'POST':
+
+        commentForm = CommentForm(request.POST)
+        if commentForm.is_valid():
+            newComment = commentForm.save(commit=False)
+            newComment.author = request.user
+            newComment.product = product
+
+            newComment.save()
+
+            return redirect("product_detail", product.id)
+    else:
+        commentForm = CommentForm()
 
     context = {
         'product': product,
+        'comments': comments,
+        'commentForm': commentForm,
     }
 
     return render(request, 'products/product_detail.html', context)

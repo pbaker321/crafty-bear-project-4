@@ -94,10 +94,50 @@
                             </div>
                         </div>
                     </form>
+                </div> 
+            </div>
+        </div>
+        <hr class="blue-line">
+        <div class="container">
+            <div class="row text-blue m-3">
+                <div class="col">
+                    <h4 class="text-center">Comments...</h4>
                 </div>
             </div>
         </div>
+        {% for comment in product.comments.all %}
+            <div class="row mb-3 mx-3">
+                <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <strong class="text-blue">{{ comment.author }} says...</strong>
+                            <p>{{ comment.body }}</p>
+                            <small class="text-muted mb-0">{{ comment.date_added }}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% if user.is_authenticated%}
+        <div class="row mb-3 mx-3">
+            <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{ commentForm|crispy }}
+                            <button id="updateBtn" name="updateBtn" value="Update" class="btn btn-white rounded-0 text-uppercase mt-5" type="submit">
+                                Post Comment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <hr class="blue-line">
     </div>
+    
 {% endblock %}
 
 {% block postloadjs %}
