@@ -189,6 +189,10 @@ ul{
     height: 600px;
 }
 
+.c-image {
+    opacity: 0.6;
+}
+
 /*-- Allauth form formatting --*/
 
 .allauth-form-inner-content p {
