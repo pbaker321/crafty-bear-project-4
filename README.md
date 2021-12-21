@@ -86,11 +86,11 @@ From [coolor.co](https://coolors.co) Color Palattes
 * Navigation Buttons that link to all pages (Depending on user permissions)
 * User registration, login and log out
 * User verification
-* User age verification
 * Password protected accounts
 * User profile page where order history can be viewed
 * Admin can add, update and delete products
-* Admin Blog page, where admin can inform users of upcoming brews
+* Customers can leave comments or reviews on the product
+* Customers can see who and when the comments/reviews were made
 * Checkout Bag
 * Secure checkout using Stripe.
 * Order verification
@@ -150,11 +150,18 @@ To be added in the future:
 
 <br/>
 
+Deployment
+======
+Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main/Deployment.md)
+
 :biohazard: Bugs
 ======
 
-Stripe Webhooks. Are sending but timing out at the source end.
-Confirmation email. not loading in terminal
+### Stripe Webhooks. Are sending but timing out at the source end.
+* I removed all but the payment webhooks
+
+### Dependencies disapearing
+* Thoughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
 
 <br/>
 
@@ -162,6 +169,14 @@ Confirmation email. not loading in terminal
 ======
 
 ### **Code**
+
+* Boutique-Ado Project. I follow through the project to help me
+* Codemy.com on Youtube to understand the comments section
+
 ### **Media**
+* Product Images are from the real Crafty bear site
+* Homepage Images are from Freepik
+* Color was picked from Coolors
+
 ### **Other**
 ### **Acknowledgements**
