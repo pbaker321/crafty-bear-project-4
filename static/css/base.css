@@ -276,6 +276,23 @@ ul{
     border-radius: 0;
 }
 
+/*-- Back to top --*/
+
+.btt-button {
+    color: #1D3557;
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /*----  Media Queries ----*/
 
 /*-- Slightly larger container on xl screens --*/
@@ -323,8 +340,8 @@ ul{
     }
 
     .navbar-toggler {
-        padding: .5rem .5rem;
-        font-size: .9rem;
+        padding: .4rem .4rem;
+        font-size: .55rem;
     }
 
     .btn.btn-outline-black.rounded,
@@ -338,8 +355,17 @@ ul{
         font-size: .75rem;
     }
 
+    .btn-white {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
     .increment-qty,
     .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .sm-icon {
+        margin: 1rem !important;
     }
 }
