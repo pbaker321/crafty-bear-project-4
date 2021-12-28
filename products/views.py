@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -89,6 +90,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@staff_member_required
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -103,7 +105,8 @@ def add_product(request):
             messages.success(request, 'Product successfully added!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product! Please check the form is valid.')
+            messages.error(request,
+                           'Failed to add product! Please check the form is valid.')
     else:
         form = ProductForm()
 
@@ -115,6 +118,7 @@ def add_product(request):
     return render(request, template, context)
 
 
+@staff_member_required
 @login_required
 def edit_product(request, product_id):
     """ Edit product in the store """
@@ -144,8 +148,9 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@staff_member_required
 @login_required
-def delete_product(request,product_id):
+def delete_product(request, product_id):
     """ Delete a Product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry only Admin can do that!')
