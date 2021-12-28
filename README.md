@@ -125,10 +125,12 @@ To be added in the future:
 ### **Tools**
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Adobe Lightroom](https://img.shields.io/static/v1?style=for-the-badge&message=Adobe+Lightroom&color=31A8FF&logo=Adobe+Lightroom&logoColor=FFFFFF&label=)
 ![Stripe](https://img.shields.io/static/v1?style=for-the-badge&message=Stripe&color=008CDD&logo=Stripe&logoColor=FFFFFF&label=)
-![Readme.so](https://readme.so/)
+
+Readme.so
+
+Gitpod
 
 <br/>
 
@@ -146,11 +148,15 @@ Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main
 :biohazard: Bugs
 ======
 
+### Emails
+* Trouble with the confirmation and verification emails stopped being sent once the project was deployed to heroku.
+* Updated to the variable names on both settings.py and config settongs on heroku. Problem fixed, although there was no typo
+
 ### Stripe Webhooks. Are sending but timing out at the source end.
 * I removed all but the payment webhooks
 
 ### Dependencies disapearing
-* Thoughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
+* Throughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
 
 <br/>
 
