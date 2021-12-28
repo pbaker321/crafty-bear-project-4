@@ -2,7 +2,7 @@
 
 ### ***User Stories Testing***
 
-![user-stories](README_FILES/user-story-test.jpg)
+![user-stories-test](README_FILES/user-story-test.jpg)
 
 * After i started the project i decided to not do package sizes
 
@@ -27,33 +27,49 @@
 ### ***HTML Validation***
 [![W3C](https://img.shields.io/static/v1?style=for-the-badge&message=W3C&color=005A9C&logo=W3C&logoColor=FFFFFF&label=)](https://validator.w3.org/)
 
-![user-stories](README_FILES/html-checker.jpg)
+![html-check](README_FILES/html-checker.jpg)
 
 ### ***CSS Validation***
 [![W3C](https://img.shields.io/static/v1?style=for-the-badge&message=W3C&color=005A9C&logo=W3C&logoColor=FFFFFF&label=)](https://jigsaw.w3.org/css-validator/)
 
 #### **Checkout CSS file**
 
-![user-stories](README_FILES/css-checkout.jpg)
+![checkout-css](README_FILES/css-checkout.jpg)
 
 #### **Base CSS File**
 
-![user-stories](README_FILES/css-base.jpg)
+![base-css](README_FILES/css-base.jpg)
 
 ### ***JavaScript Validation***
 [JShint](https://jshint.com/)
 
 #### **Static JS checkout file**
 
-![user-stories](README_FILES/jshint-checkout.jpg)
+![checkout-js](README_FILES/jshint-checkout.jpg)
 
 #### **Static JS profiles file**
 
-![user-stories](README_FILES/jshint-profiles.jpg)
+![profiles-js](README_FILES/jshint-profiles.jpg)
 
 ### ***Python Validation***
 [PEP8online](http://pep8online.com/)
 
-### ***Website Compatability***
+#### **Checkout Views**
+![views-checkout](README_FILES/views-checkoutpep8.jpg)
 
-### ***Device Responsiveness***
+#### **Profile Views**
+![views-profile](README_FILES/views-profilespep8.jpg)
+
+#### **Webhook Handler**
+![wh-handler](README_FILES/wh-handlerpep8.jpg)
+
+
+## ***Performance Testing***
+
+### **Lighthouse**
+
+#### Desktop
+![desktop-Lighthouse](README_FILES/lighthouse-desktop.jpg)
+
+#### Mobile
+![Mobile-Lighthouse](README_FILES/lighthouse-mobile.jpg)
