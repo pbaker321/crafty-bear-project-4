@@ -31,15 +31,17 @@ Milestone 4 Project for the Code Institute. A Full Stack Framework e commerse we
 </details>
 
 **<details><summary>Testing</summary>**
+[Testing](https://github.com/pbaker321/crafty-bear-project-4/blob/main/testing.md)
 </details>
 
 **<details><summary>Deployment</summary>**
-</details>
-
-**<details><summary>Issues</summary>**
+[Deployment](https://github.com/pbaker321/crafty-bear-project-4/blob/main/Deployment.md)
 </details>
 
 **<details><summary>Credits</summary>**
+* [_Code_](#code)
+* [_Media_](#media)
+* [_Acknowledgements_](#acknowledgements)
 </details>
 
 <br/>
@@ -166,12 +168,11 @@ Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main
 ### **Code**
 
 * Boutique-Ado Project. I follow through the project to help me
-* Codemy.com on Youtube to understand the comments section
+* Codemy.com on Youtube to understand the comments/review section
 
 ### **Media**
 * Product Images are from the real Crafty bear site
 * Homepage Images are from Freepik
 * Color was picked from Coolors
 
-### **Other**
 ### **Acknowledgements**
