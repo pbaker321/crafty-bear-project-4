@@ -8,6 +8,8 @@ main {
 
 body {
     background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Noto Sans Display';
     display: flex;
     min-height: 100vh;
@@ -167,7 +169,7 @@ footer {
 }
 
 .page-footer {
-    margin-top: 50px;
+    margin-top: auto;
     min-width: 100%;
 }
 
