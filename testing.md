@@ -9,20 +9,18 @@
 * I did add a customer review section, that i had previously decided on.
 
 
-### ***Test Accounts***
+:biohazard: Bugs
+======
 
-#### **Regular User**
-* Usernamme: TestCustomer
-* Password: demoaccount1
+### Emails
+* Trouble with the confirmation and verification emails stopped being sent once the project was deployed to heroku.
+* Updated to the variable names on both settings.py and config settongs on heroku. Problem fixed, although there was no typo
 
-#### **Admin/Staff User**
-* Username: Admin1
-* Password: HarryB99
+### Stripe Webhooks. Are sending but timing out at the source end.
+* I removed all but the payment webhooks
 
-#### **Stripe**
-* Card Number: 4242 4242 4242 4242
-* Expiry: 04/24
-* CVC: 242
+### Dependencies disapearing
+* Throughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
 
 ### ***HTML Validation***
 [![W3C](https://img.shields.io/static/v1?style=for-the-badge&message=W3C&color=005A9C&logo=W3C&logoColor=FFFFFF&label=)](https://validator.w3.org/)

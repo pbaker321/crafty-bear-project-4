@@ -147,18 +147,6 @@ Deployment
 ======
 Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main/Deployment.md)
 
-:biohazard: Bugs
-======
-
-### Emails
-* Trouble with the confirmation and verification emails stopped being sent once the project was deployed to heroku.
-* Updated to the variable names on both settings.py and config settongs on heroku. Problem fixed, although there was no typo
-
-### Stripe Webhooks. Are sending but timing out at the source end.
-* I removed all but the payment webhooks
-
-### Dependencies disapearing
-* Throughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
 
 <br/>
 
@@ -168,7 +156,7 @@ Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main
 ### **Code**
 
 * Boutique-Ado Project. I follow through the project to help me
-* Codemy.com on Youtube to understand the comments/review section
+* Codemy.com on Youtube to understand the comments/blog section
 
 ### **Media**
 * Product Images are from the real Crafty bear site
@@ -176,3 +164,4 @@ Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main
 * Color was picked from Coolors
 
 ### **Acknowledgements**
+ I have run out of time with the project, I realise that the Blog section can be broken in the url
