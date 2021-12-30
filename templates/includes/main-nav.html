@@ -43,7 +43,7 @@
                 Blog
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="merch-link">
-                <a href="{% url 'blog' %}?category=Merchandise" class="dropdown-item">Blog</a>
+                <a href="{% url 'blog' %}" class="dropdown-item">Blog</a>
                 {% if request.user.is_superuser %}
                     <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
                 {% endif %}
