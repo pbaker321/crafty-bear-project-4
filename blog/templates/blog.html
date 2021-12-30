@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card h-100 border-0 text-blue">
+                
+                <ul>
+                    {% for post in object_list %}
+                        <hr class="blue-line">
+                        <li>
+                            <h4 class="text-center">{{ post.title }}</h4>
+                            <p class="text-center"><strong>By {{ post.author }}</strong></p>
+                            <br/>
+                            <p class="text-center">{{ post.body }}</p>
+                        </li>
+                        <hr class="blue-line">
+                    {% endfor %}
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
