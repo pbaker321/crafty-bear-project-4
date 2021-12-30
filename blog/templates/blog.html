@@ -14,17 +14,22 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col">
-            <div class="card h-100 border-0 text-blue">
+        <div class="col text-center mt-3">
+            <hr class="blue-line">
+            <h2 class="logo-font text-blue text-center">Crafty Blog</h2>
+            <hr class="blue-line">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-3">
+            <div class="text-blue">
                 
                 <ul>
                     {% for post in object_list %}
-                        <hr class="blue-line">
                         <li>
                             <h4 class="text-center">{{ post.title }}</h4>
                             <p class="text-center"><strong>By {{ post.author }}</strong></p>
-                            <br/>
-                            <p class="text-center">{{ post.body }}</p>
+                            <p class="text-center text-blue"><a href="{% url 'blog_details' post.pk %}">{{ post.description }}</a></p>
                         </li>
                         <hr class="blue-line">
                     {% endfor %}
