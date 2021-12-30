@@ -26,6 +26,12 @@
             <div class="text-blue mt-3">
               {{ post.body }}
             </div>
+            {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href="{% url 'edit_blog' post.pk %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_blog' post.pk %}">Delete</a>
+                </small>
+            {% endif %}
         </div>
     </div>
     <div class="col-12">
