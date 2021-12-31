@@ -164,4 +164,3 @@ Can be found [here](https://github.com/pbaker321/crafty-bear-project-4/blob/main
 * Color was picked from Coolors
 
 ### **Acknowledgements**
- I have run out of time with the project, I realise that the Blog section can be broken in the url

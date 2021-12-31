@@ -22,6 +22,9 @@
 ### Dependencies disapearing
 * Throughout I had to reload all dependcies. I discovered this was due to a gitpod update. 
 
+### Blog
+* I attempted to put a blog section in the site in the last minute. I ran out of time to fix the problems I was having in the deployed version. So I removed the app completly
+
 ### ***HTML Validation***
 [![W3C](https://img.shields.io/static/v1?style=for-the-badge&message=W3C&color=005A9C&logo=W3C&logoColor=FFFFFF&label=)](https://validator.w3.org/)
 
